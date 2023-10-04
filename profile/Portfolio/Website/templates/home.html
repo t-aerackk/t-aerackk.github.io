@@ -1,0 +1,276 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Simplified Portfolio Site">
+    <meta name="author" content="Devcrud">
+    <title>{% block title %} Anjal's Portfolio {% endblock %} </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'imgs/fav.png' %}">
+    <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+	<link rel="stylesheet" href="{% static 'css/meyawo.css' %}">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="60" id="home">
+
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Anjal Thapa</span>
+            </h1>
+            <p class="header-subtitle">Django Developer with other soft skills</p>            
+
+            <button class="btn btn-success">Visit My Works</button>
+        </div>              
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="{% static '/imgs/man.png'%}" class="about-img" alt="logo">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>A Django developer with six months of professional experience possesses a solid foundation in building robust web applications using the Django framework.</P>
+                    <a href="{% static './rev.pdf' %}"download>
+                        <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button></a>
+
+                </div>              
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Do ?</p>
+            <h6 class="section-title mb-6">Service</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{% static 'imgs/pencil-case.svg'%}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Creative designs</h6>
+                            <p class="subtitle">I paint your portfolio with some colorful Insights.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{% static 'imgs/responsive.svg'%}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Web Development</h6>
+                            <p class="subtitle">Whether you need a professional webpage or a personal website, i'm here for you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{% static 'imgs/toolbox.svg'%}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Customization </h6>
+                            <p class="subtitle">Your website needs a little customization and Maintainence, assume i'm your web mechanic.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{% static 'imgs/analytics.svg'%}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">SEO</h6>
+                            <p class="subtitle">I don't know much about SEO but i can make your site visible to Google. </p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What I usually do ?</p>
+            <h6 class="section-title mb-6">Portfolio</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img src="{% static 'imgs/folio-1.jpg'%}" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                <p class="font-weight-normal">Creative Web Pages</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{% static 'imgs/folio-2.jpg'%}" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Development</h5>
+                                <p class="font-weight-normal">Responsive and Dynamic Web pages</p>
+                            </span>                         
+                        </span>                         
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{% static 'imgs/folio-3.jpg'%}" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Management </h5>
+                                <p class="font-weight-normal">Web Management & Customization Services</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+
+        <!-- testimonial section -->
+    <section class="section" id="testmonial">
+        <div class="container text-center">
+            <p class="section-subtitle">What my Client thinks About Me ?</p>
+            <h6 class="section-title mb-6">Testmonials</h6>
+
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="{% static 'imgs/Me.jpg'%}" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                           
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">Actively searching for a client who is ready to replace my position here.</p>
+                            <h6 class="testimonial-card-title">Anjal Thapa</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="{% static 'imgs/Me.jpg'%}" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">Ready to be my client? contact me from the details below.</p>
+                            <h6 class="testimonial-card-title">Anjal Thapa</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of testimonial section -->
+    
+    <!-- blog section -->
+    <section class="section" id="blog">
+        <!-- container -->
+        <div class="container text-center">
+            <p class="section-subtitle">Recent Posts?</p>
+            <h6 class="section-title mb-6">Blog</h6>
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="{% static 'imgs/img-1.jpg'%}" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">My Creativity</h6>
+
+                    <p class="blog-card-caption">
+                        <a href="#">By: Admin</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#"><i class="ti-comment"></i> 123</a>
+                    </p>
+                    <p>Hello there, my creativity is flourishing well.</P>
+                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="{% static 'imgs/img-2.jpg'%}" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Short Feed</h6>
+
+                    <p class="blog-card-caption">
+                        <a href="#">By: Admin</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 456</a>
+                        <a href="#"><i class="ti-comment"></i> 264</a>
+                    </p>
+                    <p>"Every life is a unique story, a collection of defining moments. Today, we delve into the captivating journey, passions, and achievements that shape Anjal's extraordinary life."
+
+                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+        </div><!-- end of container -->
+    </section><!-- end of blog section -->
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How you can communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="Enter Email"requried>                 
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
+                    </div>
+                </div>  
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+            <p class="mb-0">
+                <a href= target="_blank"><i class="ti-mobile"></i>977-9860114811</a><span>
+                <a href="javascript:void(0)" class="link"><i class="ti-email"></i>Aenjaal@gmail.com</a></p><br>
+               Copyright <script>document.write(new Date().getFullYear())</script> &copy;Anjal
+
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="https://www.facebook.com/profile.php?id=100087221303519" class="link"><i class="ti-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/anjal-thapa-12741a174/" class="link"><i class="ti-linkedin"></i></a>
+                <a href="https://www.instagram.com/t.aerackkkkkkkkkkkkkkkkkkkkk/" class="link"><i class="ti-instagram"></i></a>
+                <a href="https://github.com/t-aerackk" class="link"><i class="ti-github"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="{% static 'vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="{% static 'vendors/bootstrap/bootstrap.affix.js' %}"></script>
+
+    <!-- Meyawo js -->
+    <script src="{% static 'vendors/js/meyawo.js' %}"></script>
+
+</body>
+</html>
